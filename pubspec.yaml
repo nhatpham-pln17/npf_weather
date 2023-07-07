@@ -11,18 +11,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  geocoding: ^2.1.0
+  geolocator: ^9.0.2
+  get: ^4.6.5
+  google_fonts: ^5.1.0
+  http: ^1.1.0
+  sleek_circular_slider: ^2.0.1
 
 dev_dependencies:
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-
-  flutter_lints: ^2.0.0
 
 flutter:
 
   uses-material-design: true
-  
+
   assets:
     - assets/weather/01d.png
     - assets/weather/01n.png
@@ -64,4 +68,3 @@ flutter:
         - asset: assets/font/NotoSans/NotoSans-SemiBoldItalic.ttf
         - asset: assets/font/NotoSans/NotoSans-Thin.ttf
         - asset: assets/font/NotoSans/NotoSans-ThinItalic.ttf
-
