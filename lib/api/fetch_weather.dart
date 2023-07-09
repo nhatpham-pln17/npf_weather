@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:npf_weather/api/api_key.dart';
 import 'package:npf_weather/model/weather_data.dart';
 import 'package:npf_weather/model/weatherdata_current.dart';
+import 'package:npf_weather/model/weatherdata_daily.dart';
 
 class FetchWeatherAPI {
   WeatherData? weatherData;
@@ -13,7 +14,7 @@ class FetchWeatherAPI {
     var jsonString = jsonDecode(response.body);
     weatherData = WeatherData(
       WeatherDataCurrent.fromJson(jsonString),
-
+      WeatherDataDaily.fromJson(jsonString),
     );
 
     return weatherData!;
