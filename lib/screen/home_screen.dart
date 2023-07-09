@@ -4,6 +4,7 @@ import 'package:npf_weather/controller/global_controller.dart';
 import 'package:npf_weather/widget/currentweather_widget.dart';
 import 'package:npf_weather/widget/dailyforcast_widget.dart';
 import 'package:npf_weather/widget/header_widget.dart';
+import 'package:npf_weather/widget/hourlyforcast_widget.dart';
 
 class HomeScreen extends StatefulWidget{
   const HomeScreen({Key? key}): super(key:key);
@@ -30,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen>{
           const HeaderWidget(),
 
           CurrentWeatherWidget(weatherDataCurrent: globalController.getData().getCurrentWeather()),
+          HourlyWidget(weatherDataHourly: globalController.getData().getHourlyWeather()),
           DailyForecast(weatherDataDaily: globalController.getData().getDailyWeather()),
         ],
       ),)),
