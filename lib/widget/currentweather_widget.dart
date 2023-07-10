@@ -27,6 +27,7 @@ class CurrentWeatherWidget extends StatelessWidget {
 
   Widget TemperatureWidget() {
     String temp = "${weatherDataCurrent.current.temp!.toInt()}°C";
+    print(weatherDataCurrent.current.uvIndex!.toDouble());
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
@@ -139,7 +140,7 @@ class CurrentWeatherWidget extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [

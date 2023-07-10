@@ -12,7 +12,7 @@ double percent = 0.5;
 // FONTSIZE
 //Heading
 double h1Size = 100 * percent;
-double h2Size = 55 * percent;
+double h2Size = 80 * percent;
 double h3Size = 36 * percent;
 double h4Size = 32 * percent;
 double h5Size = 28 * percent;

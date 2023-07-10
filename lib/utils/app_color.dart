@@ -5,6 +5,7 @@ class AppColors {
   static const primary = Color(0xff975220);
   static const secondary = Color(0xff963C0B);
   static const success = Color(0xff41C588);
+  static const warning = Color(0xffFFC107);
   static const error = Color(0xffB42318);
   static const neutral = Color(0xffADB5BD);
   static const accent = Color(0xff194185);
